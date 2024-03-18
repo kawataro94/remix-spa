@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -25,6 +26,12 @@ export default function Index() {
           <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
             Remix Docs
           </a>
+        </li>
+        <li>
+          <Link to="/page1">Page 1</Link>
+        </li>
+        <li>
+          <Link to="/page2">Page 2</Link>
         </li>
       </ul>
     </div>
